@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+ol,ul,li {
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+hr {
+    clear: both;
+    content: "";
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+}
+.headerBar {
+    width: 83%;
+    height: 40px;
+    position: relative;
+}
+
+.headerBar > ul {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.headerBar > ul > li {
+    float: left;
+    margin: 0 2px 0 53px;
+}
+
+.headerBar > ul > li > a {
+    font-size: 11px;
+    color: #f7f7f7;
+    line-height: 39px;
+    vertical-align: top;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.navBarHidden {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border-bottom: 2px solid #464646;
+}
+
+.navBarHiddenmenu {
+    width: 83%;
+    height: auto;
+}
+
+.navBarHiddenmenu > ul > li {
+    float: right;
+    margin-left: 40px;
+    width: 150px;
+    text-align: right;
+    padding-bottom: 60px;
+}
+
+.navBarHiddenmenu > ul > li > strong ,span {
+    font-size: 15px;
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.navBarHiddenmenu > ul > li > strong:lang(en) ,span:lang(en) {
+    font-size: 15px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.navBarHiddenmenu > ul > li > strong {
+    color: #cccccc;
+}
+
+.navBarHiddenmenu > ul > li > span {
+    color: #464646;
+}
+
+.navBarHiddenmenu > ul > li > ul {
+    margin-top: 25px;
+    border-top: 2px solid #e1dedc;
+    padding: 15px 0 0 0;
+}
+
+.navBarHiddenmenu > ul > li > ul > li {
+    margin: 7px 0;
+}
+
+.navBarHiddenmenu > ul > li > ul > li > p ,a {
+    font-size: 12px;
+    font-family: 'Malgun Gothic';
+    line-height: 14px;
+}
+
+.navBarHiddenmenu > ul > li > ul > li > p:lang(en) ,a:lang(en) {
+    font-size: 12px;
+    font-family: 'Noto Serif', serif;
+    line-height: 14px;
+}
+
+.navBarHiddenmenu > ul > li > ul > li > p {
+    color: #cccccc;
+}
+
+.navBarHiddenmenu > ul > li > ul > li > a {
+    color: #464646;
+}
+
+
+
+.navBar {
+    width: 83%;
+    height: 110px;
+    position: relative;
+}
+
+.navBarLogo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.navBarLogoImg {
+    width: 156px;
+}
+
+.navBarList {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.navBarList > ul > li {
+    float: left;
+    margin-left: 53px;
+}
+
+.navBarList > ul > li > a {
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #464646;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.navBarListSpan {
+    margin-right: 29px;
+}
+
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.swiper-pagination {
+    position: absolute;
+    display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #7a0500 !important;
+  }
+
+.swiperBar {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.SwiperBarBox1 {
+    margin: 50px 0;
+    width: calc(50% - 0.5px);
+    height: 200px;
+    border-right:1px solid #ded9d6 ;
+    position: absolute;
+    left:0;
+}
+
+.SwiperBarBox2 {
+    margin: 50px 0;
+    width: calc(50% - 0.5px);
+    height: 200px;
+    position: absolute;
+    left: calc(50% + 0.5px);
+}
+
+.SwiperBarBox1_list {
+    margin-left: 50%;
+}
+
+.SwiperBarBox1_list > h2 {
+    color: #3A466A;
+    font-size: 30px;
+    font-family: 'Noto Serif'
+}
+
+.SwiperBarBox1_list > h3 {
+    color: #464646;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Malgun Gothic';
+    margin: 35px 0 0;
+    line-height: 27px;
+}
+
+
+.SwiperBarBox2_list {
+    margin-left: 10%;
+}
+
+.SwiperBarBox2_list > h4 {
+    color: #464646;
+    font-size: 14px;
+    font-family: 'Malgun Gothic';
+    line-height: 27px;
+}
+
+.SwiperBarBox2_img {
+    margin-top: 20px;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+.sectImg1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../imgs/visual01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5px;
+}
+
+.sectInner {
+    width: 1200px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: auto;
+    text-align: center;
+}
+
+.sectInnerFont > h2 {
+    color: #3a466a;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+}
+
+.sectInnerFont > p {
+    font-size: 17px;
+    margin:20px;
+}
+
+.menuList {
+    overflow:hidden; 
+    margin:40px 0 0;
+}
+
+.menuList li {
+    float:left; 
+    height:256px;
+}
+
+.menuList li.m01 {
+    width:477px; 
+    height:515px; 
+    margin:0 3px 0 0; 
+    background:#f7f7f7 url(../imgs/menu_link01.jpg) no-repeat center top
+}
+
+.menuList li.m02 {
+    width:238px; 
+    margin:0 3px 0 0; 
+    background:#f7f7f7 url(../imgs/menu_link02.png) no-repeat center top;
+    background-size:200px 200px;
+}
+
+.menuList li.m03 {
+    width:479px;
+    background:#f7f7f7 url(../imgs/menu_link03.jpg) no-repeat center top;
+}
+
+.menuList li.m04 {
+    width:479px; 
+    margin:3px 3px 0 0; 
+    background:#f7f7f7 url(../imgs/menu_link04.jpg) no-repeat center top;
+}
+
+.menuList li.m05 {
+    width:238px; 
+    margin:3px 0 0; 
+    background:#f7f7f7 url(../imgs/menu_link05.jpg) no-repeat center top;
+}
+
+.menuList li a {
+    display:block; 
+    height:61px; 
+    padding:195px 0 0;
+}
+
+.menuList li.m01 a {
+    height:65px; 
+    padding:450px 0 0;
+}
+
+.menuList li a strong {
+    display:block; 
+    font-size:17px; 
+    color:#7d645a;
+}
+
+.menuList li a p {
+    margin:4px 0 0; 
+    font-size:13px; 
+    color:#464646;
+}
+
+.sectImg2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../imgs/visual02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 3px;
+}
+
+.sectBot {
+    width: 100%;
+    height: 170px;
+    background-color: #beb4af;
+    text-align: center;
+    position: relative;
+}
+
+.sectBotFont {
+    width: 750px;
+    height: 44px;
+    padding-top: 63px;
+}
+
+
+
+.sectBotFont > p {
+    font-size: 14px;
+    font-family: 'Malgun Gothic';
+    color: #fff;
+}
+
+.sectBotFontSpan {
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    margin-right: 50px;
+}
+
+.secBotFontImg {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 45%;
+    right: 23%;
+    transform: translateY(-50%);
+}
+
+.sectBotBtn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 69px;
+    height: 26px;
+    padding: 13px 0 0 33px;
+    margin: 0 0 0 -51px;
+    background: url(../imgs/btn_go_top.png) no-repeat left bottom;
+    z-index: 999;
+}
+
+.sectBotBtn a {
+    color: #646464;
+    padding: 0 40px 0 0;
+}
+
+.footNav {
+    width: 100%;
+    height: 233px;
+    background-color: #282828;
+}
+
+.footNavList {
+    width: 1200px;
+}
+
+.footNavListIn {
+    overflow:hidden; 
+    max-width:1200px; 
+    margin:0 auto; 
+    padding:40px 0 70px;
+}
+
+.footNavListIn > li {
+    float:left; 
+    width:160px; 
+    padding:0 20px 0 0;
+}
+
+.footNavListIn > li > span {
+    display:block; 
+    line-height:52px; 
+    font-size:16px; 
+    color:#646464; 
+    background:url(../imgs/bar_snb.gif) no-repeat left bottom;
+}
+
+.footNavListIn ul {
+    padding:15px 0 0;
+}
+
+.footNavListIn ul li a {
+    line-height:28px; 
+    font-size:14px; 
+    color:#8c8c8c;
+}
+
+.footFin {
+    width: 100%;
+    height: 340px;
+    background: #1e1e1e;
+}
+
+.footFinList {
+    width: 1200px;
+    height: auto;
+    position: relative;
+    padding-top: 40px;
+}
+
+.footLogo {
+    width: 160px;
+    padding: 20px 0;
+}
+
+.footLinkText {
+    padding: 3px 0;
+}
+
+.footLinkText > ul > li {
+    float: left;
+}
+
+.footLinkText > ul > li > a {
+    color: #505050;
+    font-size: 14px;
+    font-family: 'Malgun Gothic';
+}
+
+.footLinkText > ul > li > a > span {
+    font-weight: bold;
+}
+
+.footLinkText > ul > li > a > strong {
+    font-family: 'Noto Serif', serif;
+}
+
+.footLinkBar {
+    padding: 0 7px;
+}
+
+.copyRight {
+    color: #505050;
+    font-size: 17px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 900;
+    margin-top: 35px;
+}
+
+.footImgLink {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+
+
+
+
