@@ -83,25 +83,17 @@ nav {
     padding-bottom: 60px;
 }
 
-.navBarHiddenmenu > ul > li > strong ,span {
+.navBarHiddenmenu > ul > li > strong {
     font-size: 15px;
     font-family: 'Malgun Gothic';
     font-weight: bold;
-    line-height: 17px;
+    color: #464646;
 }
 
-.navBarHiddenmenu > ul > li > strong:lang(en) ,span:lang(en) {
+.navBarHiddenmenu > ul > li > strong:lang(en) {
     font-size: 15px;
     font-family: 'Noto Serif', serif;
     font-weight: bold;
-    line-height: 17px;
-}
-
-.navBarHiddenmenu > ul > li > strong {
-    color: #cccccc;
-}
-
-.navBarHiddenmenu > ul > li > span {
     color: #464646;
 }
 
@@ -112,27 +104,26 @@ nav {
 }
 
 .navBarHiddenmenu > ul > li > ul > li {
-    margin: 7px 0;
-}
-
-.navBarHiddenmenu > ul > li > ul > li > p ,a {
-    font-size: 12px;
-    font-family: 'Malgun Gothic';
-    line-height: 14px;
-}
-
-.navBarHiddenmenu > ul > li > ul > li > p:lang(en) ,a:lang(en) {
-    font-size: 12px;
-    font-family: 'Noto Serif', serif;
-    line-height: 14px;
-}
-
-.navBarHiddenmenu > ul > li > ul > li > p {
-    color: #cccccc;
+    margin: 10px 0;
 }
 
 .navBarHiddenmenu > ul > li > ul > li > a {
+    font-size: 12px;
+    font-family: 'Malgun Gothic';
     color: #464646;
+}
+
+.navBarHiddenmenu > ul > li > ul > li > a:lang(en) {
+    font-size: 12px;
+    font-family: 'Noto Serif', serif;
+    color: #464646;
+}
+
+
+
+.nonPoint {
+    color: #cccccc !important;
+    /* href 지울것 */
 }
 
 
