@@ -149,7 +149,7 @@
                                 <a class="nonPoint">매장별 이벤트</a>
                             </li>
                             <li>
-                                <a>당첨자 공지</a>
+                                <a class="nonPoint">당첨자 공지</a>
                             </li>
                         </ul>
                     </li>
@@ -310,9 +310,9 @@
     <div class="swiper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href=""><img src="./imgs/Main_하겐다즈 콜라보 홈페이지용.png" alt="" style="width: 100%; margin: 0;"></a></div>
-                <div class="swiper-slide"><a href=""><img src="./imgs/Main_Main_20_0420 여름시즌 1 신메뉴.jpg" alt="" style="width: 100%; margin: 0;"></a></div>
-                <div class="swiper-slide"><a href=""><img src="./imgs/Main_Main_191227-베네데이-홈페이지-메인배너.jpg" alt="" style="width: 100%; margin: 0;"></a></div>
+                <div class="swiper-slide"><a href=""><img src="./imgs/Main_Main_1.jpg" alt="" style="width: 100%; margin: 0;"></a></div>
+                <div class="swiper-slide"><a href=""><img src="./imgs/Main_Main_2.jpg" alt="" style="width: 100%; margin: 0;"></a></div>
+                <div class="swiper-slide"><a href=""><img src="./imgs/Main_Main_3.png" alt="" style="width: 100%; margin: 0;"></a></div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -512,42 +512,54 @@
         var bul = false;
         $('#l01').hover(function(){
             $(this).css("border-bottom", "2px solid #464646");
+            $('#m01').css("z-index", "999");
             $('#l02, #l03, #l04, #l05, #l06').css('border-bottom','');
+            $('#m02, #m03, #m04, #m05, #m06').css('z-index','0');
             $('#m02, #m03, #m04, #m05, #m06').css('display','none');
             $('#m01').slideDown();
             bul = true;
         });
         $('#l02').hover(function(){
             $(this).css("border-bottom", "2px solid #464646");
+            $('#m02').css("z-index", "999");
             $('#l01, #l03, #l04, #l05, #l06').css('border-bottom','');
+            $('#m01, #m03, #m04, #m05, #m06').css('z-index','0');
             $('#m01, #m03, #m04, #m05, #m06').css('display','none');
             $('#m02').slideDown();
             bul = true;
         });
         $('#l03').hover(function(){
             $(this).css("border-bottom", "2px solid #464646");
+            $('#m03').css("z-index", "999");
             $('#l01, #l02, #l04, #l05, #l06').css('border-bottom','');
+            $('#m01, #m02, #m04, #m05, #m06').css('z-index','0');
             $('#m01, #m02, #m04, #m05, #m06').css('display','none');
             $('#m03').slideDown();
             bul = true;
         });
         $('#l04').hover(function(){
             $(this).css("border-bottom", "2px solid #464646");
+            $('#m04').css("z-index", "999");
             $('#l01, #l02, #l03, #l05, #l06').css('border-bottom','');
+            $('#m01, #m02, #m03, #m05, #m06').css('z-index','0');
             $('#m01, #m02, #m03, #m05, #m06').css('display','none');
             $('#m04').slideDown();
             bul = true;
         });
         $('#l05').hover(function(){
             $(this).css("border-bottom", "2px solid #464646");
+            $('#m05').css("z-index", "999");
             $('#l01, #l02, #l03, #l04, #l06').css('border-bottom','');
+            $('#m01, #m02, #m03, #m04, #m06').css('z-index','0');
             $('#m01, #m02, #m03, #m04, #m06').css('display','none');
             $('#m05').slideDown();
             bul = true;
         });
         $('#l06').hover(function(){
             $(this).css("border-bottom", "2px solid #464646");
+            $('#m06').css("z-index", "999");
             $('#l01, #l02, #l03, #l04, #l05').css('border-bottom','');
+            $('#m01, #m02, #m03, #m04, #m05').css('z-index','0');
             $('#m01, #m02, #m03, #m04, #m05').css('display','none');
             $('#m06').slideDown();
             bul = true;

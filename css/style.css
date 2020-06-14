@@ -63,7 +63,6 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 999;
     width: 100%;
     height: auto;
     background-color: #ffffff;
@@ -189,6 +188,7 @@ nav {
     width: 100%;
     height: 300px;
     position: relative;
+    z-index: 1;
     background-color: #f5f5f5;
 }
 
@@ -250,12 +250,10 @@ section {
 }
 
 .sectImg1 {
-    width: 100%;
-    height: 500px;
-    background-image: url(../imgs/visual01.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 5px;
+	width: 100%;
+	height: 0;
+	padding-top : calc(546 / 1523 * 100%);
+	background : url(../imgs/visual01.png) center center / cover no-repeat;
 }
 
 .sectInner {
@@ -341,13 +339,12 @@ section {
     color:#464646;
 }
 
+
 .sectImg2 {
-    width: 100%;
-    height: 500px;
-    background-image: url(../imgs/visual02.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 3px;
+	width: 100%;
+	height: 0;
+	padding-top : calc(546 / 1523 * 100%);
+	background : url(../imgs/visual02.png) center center / cover no-repeat;
 }
 
 .sectBot {
@@ -439,7 +436,7 @@ section {
     padding:15px 0 0;
 }
 
-.footNavListIn ul li a {
+.footNavListIn ul > li > a {
     line-height:28px; 
     font-size:14px; 
     color:#8c8c8c;
